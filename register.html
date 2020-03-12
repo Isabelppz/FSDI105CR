@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>The Fashion Pet</title>
+</head>
+<body>
+    <header>
+        <h1>The Fashion Pet</h1>
+        <nav id="menu">
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="register">
+    <div class="input-pet">
+    <form action="#">
+        <br>
+        <br>
+        <label for="name">Name: </label>
+        <input id="txtname" type="text">
+        <br>
+        <br>
+        <label for="age">Age:   </label>
+        <input type="number" name="age" id="txtage">
+        <br>
+        <br>
+        <label for="gender">Gender: </label>
+        <input id="txtgender" type="text">
+        <br>
+        <br>
+        <label for="breed">Breed:   </label>
+        <input id="txtbreed" type="text">
+        <br>
+        <br>
+        <label for="services">Service:  </label>
+        <select name="services" id="txtservice">
+            <option value="" disable selected>--Select Service---</option>
+            <option value="Shower">Shower</option>
+            <option value="Hair cut">Hair Cut</option>
+            <option value="Full Service">Full Service</option></select>
+        <br>
+        <br>
+        <label for="owner">Owner´s Name: </label>
+        <input id="txtowner" type="text">
+        <br>
+        <br>
+        <label for="contact">Contact phone: </label>
+        <input id="txtcontact" type="text">
+        <br>
+        <br>
+    <input type="button" value="Register" onclick="register();">
+ </form>
+</div>
+    <div class="display">
+        <div class="search">
+            <input type="search" name="search" id="petSearch">
+            <button onclick ="Search();">Search</button>
+        </div>
+    </div>
+    <div>
+        <table>
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Breed</th>
+            <th>Service</th>
+            <th>Owner's Name</th>
+            <th>Contact</th>
+        </thead>
+            <tbody id="rowPet"></tbody>
+        </table>
+    </div>
+</main>
+ <footer>
+    <div id="info" class="info"></div>
+ </footer>
+ <script src="myscript.js"></script>
+</body>
+</html>
