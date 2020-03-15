@@ -14,5 +14,3 @@ personal challenge:
 We recommend creating a github repository named: <b>FSDI 201- Competency Report </b>
 and upload your project files to in.
 Then provide the repository link in the feedback loop.
-
-upload the project to netlify :) 
